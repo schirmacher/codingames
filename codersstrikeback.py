@@ -1,24 +1,24 @@
 import sys
 import math
 
-# This code automatically collects game data in an infinite loop.
-# It uses the standard input to place data into the game variables such as x and y.
-# YOU DO NOT NEED TO MODIFY THE INITIALIZATION OF THE GAME VARIABLES.
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
 
 
 # game loop
 while True:
-    # x: x position of your pod
-    # y: y position of your pod
     # next_checkpoint_x: x position of the next check point
     # next_checkpoint_y: y position of the next check point
-    x, y, next_checkpoint_x, next_checkpoint_y = [int(i) for i in input().split()]
+    # next_checkpoint_dist: distance to the next checkpoint
+    # next_checkpoint_angle: angle between your pod orientation and the direction of the next checkpoint
+    x, y, next_checkpoint_x, next_checkpoint_y, next_checkpoint_dist, next_checkpoint_angle = [int(i) for i in input().split()]
+    opponent_x, opponent_y = [int(i) for i in input().split()]
 
     # Write an action using print
     # To debug: print("Debug messages...", file=sys.stderr, flush=True)
 
 
-    # Edit this line to output the target position
-    # and thrust (0 <= thrust <= 100)
+    # You have to output the target position
+    # followed by the power (0 <= thrust <= 100)
     # i.e.: "x y thrust"
-    print(str(next_checkpoint_x) + " " + str(next_checkpoint_y) + " 100")
+    print(str(next_checkpoint_x) + " " + str(next_checkpoint_y) + " 80")
