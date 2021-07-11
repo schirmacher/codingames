@@ -21,4 +21,4 @@ while True:
     # Edit this line to output the target position
     # and thrust (0 <= thrust <= 100)
     # i.e.: "x y thrust"
-    print(str(next_checkpoint_x) + " " + str(next_checkpoint_y) + " 50")
+    print(str(next_checkpoint_x) + " " + str(next_checkpoint_y) + " 100")
